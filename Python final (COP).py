@@ -3,7 +3,7 @@ print("World's Best Calculator, here you can have all and every formula needed f
 print("*Small note: if you wish to end the program, use CTRL + C*\n")
 
 while True:
-    print("\nPick 1 for Algebra \nPick 2 for Geometry \nPick 3 for Pre-Calculus \n")
+    print("\n\nPick 1 for Algebra \nPick 2 for Geometry \nPick 3 for Pre-Calculus \n")
     choice=input("Select 1, 2 or 3: ")
     if choice=="1": #Algebra
         print("\nWelcome to Algebra! \nPick 1 for formulas \nPick 2 for solutions\n")
@@ -79,7 +79,7 @@ while True:
                     print("Invalid choice!")
             if  solutions=="2": #2. Quadratic equations
                 print("Pick 1 for completing the square \nPick 2 to learn how to factor")
-                quadratic=input("Select 1 or 2")
+                quadratic=input("Select 1 or 2: ")
                 if quadratic=="1": #2.1 completing the square
                     print("Complete the square: (b/2a)^2")
                     print()
@@ -91,7 +91,7 @@ while True:
                 elif quadratic=="2": #2.2 learn how to factor
                     print("Factoring is very simple as long as you follow some very simple steps! \n\n1. Identify your your a,b, and c values from ax^2+bx+c"
                           "\n2. Identify if your coefficient is 1 or any other number\n\n")
-                    coefficient=input("Is your coefficient 1 or another number? ")
+                    coefficient=input("Is your coefficient 1 or another number? (Enter 1 or another number)")
                     if coefficient=="1": #2.2.1a=1
                         print("\n3. Find 2 numbers that multiply up to your c value and add up your b value (keep in mind negative numbers)"
                               "\n4. rewrite your equation as ax^2+(new number)x+(second new number x)+c \n5. Separate the equation in groups of 2"
@@ -104,7 +104,7 @@ while True:
                         print("Invalid choice!")
             if solutions=="3":#3. exponential functions
                 print("Pick 1 for Parent function \nPick 2 for Exponential growth \nPick 3 for Exponential Decay")
-                exponent=input("Select 1,2, or 3")
+                exponent=input("Select 1,2, or 3: ")
                 if exponent=="1": #3.1 parent function
                     print("Parent function: f(x)=ab^x")
                     print()
@@ -623,3 +623,4 @@ while True:
                       "\n\n Quotient of two complex numbers in Polar form: \n  Z1/Z2=r1/r2[cos(Θ1-Θ2)+isin(Θ1-Θ2)] \n\n DeMoivre's Theorem: \n  "
                       "Z^n=[r(cosΘ+isinΘ)]^n = r^n (cosnΘ+isinΘ) \n\n DeMoivre's Theorem for finding Complex Roots: Zk=n√r [cos(Θ+2πk/n)+isin(Θ+2πk/n)"
                       "\n   *For Degrees switch '2π' with '360'*") 
+
