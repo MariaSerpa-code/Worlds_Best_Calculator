@@ -32,7 +32,7 @@ while True:
                   "Pick 4 for Quadratic Formula \nPick 5 Final Amounts under Simple Interest \nPick 6 for Final Amounts under Compound Interest\n")
             solutions=input("Select 1,2,3,4,5 or 6: ")
             if solutions=="1": #1. linear equations
-                print("Pick 1 for slope \nPick 2 for slope intercept form \nPick 3 for Point Slope Formula")
+                print("\nPick 1 for slope \nPick 2 for slope intercept form \nPick 3 for Point Slope Formula")
                 linear=input("Select 1,2, or 3: ")
                 if linear=="1": #1.1 slope
                     print("Slope formula: m=(y2-y1)/(x2-x1)")
@@ -78,7 +78,7 @@ while True:
                 else:
                     print("Invalid choice!")
             if  solutions=="2": #2. Quadratic equations
-                print("Pick 1 for completing the square \nPick 2 to learn how to factor")
+                print("\nPick 1 for completing the square \nPick 2 to learn how to factor")
                 quadratic=input("Select 1 or 2: ")
                 if quadratic=="1": #2.1 completing the square
                     print("Complete the square: (b/2a)^2")
@@ -103,7 +103,7 @@ while True:
                     else:
                         print("Invalid choice!")
             if solutions=="3":#3. exponential functions
-                print("Pick 1 for Parent function \nPick 2 for Exponential growth \nPick 3 for Exponential Decay")
+                print("\nPick 1 for Parent function \nPick 2 for Exponential growth \nPick 3 for Exponential Decay")
                 exponent=input("Select 1,2, or 3: ")
                 if exponent=="1": #3.1 parent function
                     print("Parent function: f(x)=ab^x")
@@ -243,7 +243,7 @@ while True:
             elif solutions=="4": #4. Area and Surface Area of shapes
                 print("KEY: \nA=area \nSA=surface area \nP=perimeter \na=apothem \nh=height \nr=radius \nhs=slant height \nl=slant height \nb=base \nB=area of base")
                 print()
-                print("Pick 1 for Area of a Parallelogram \nPick 2 for Area of a Trapezoid \nPick 3 for Area of a Circle \nPick 4 for Area of a Regular"
+                print("\nPick 1 for Area of a Parallelogram \nPick 2 for Area of a Trapezoid \nPick 3 for Area of a Circle \nPick 4 for Area of a Regular"
                                " Polygon \nPick 5 for Surface Area of a Prism/Cylinder \nPick 6 for Surface Area of a Cone \nPick 7 for Surface Area of a"
                                " Regular Pyramid \n Pick 8 for Surface Area of a Sphere")
                 areas=input("Select 1,2,3,4,5,6,7, or 8: ")
@@ -318,13 +318,13 @@ while True:
             elif solutions=="5": #5. Circumference and Volume of shapes
                 print("KEY: \nC=ciCircumference \nV=volume \nr=radius \nd=diameter \nB=area of base \nh=height")
                 print()
-                print("Pick 1 for Circumference of a circle \nPick 2 for Volume of a prism/cylinder \nPick 3 for Volume of a cone \nPick 4 for Volume of a "
+                print("\nPick 1 for Circumference of a circle \nPick 2 for Volume of a prism/cylinder \nPick 3 for Volume of a cone \nPick 4 for Volume of a "
                       "regular pyramid \nPick 5 for Volume of a sphere")
                 volume=input("Select 1,2,3,4, or 5: ")
                 if volume=="1": #5.1 Circumference of a circle
                     print("Circumference of a circle: C=2πr or C=πd")
                     print()
-                    print("Pick 1 for solving circumference with radius \nPick 2 for solving circumference with diameter")
+                    print("\nPick 1 for solving circumference with radius \nPick 2 for solving circumference with diameter")
                     r_and_d=input("Select 1 or 2: ")
                     if r_and_d=="1": #Circumference with radius
                         r=float(input("Enter your 'r' value: "))
@@ -408,7 +408,7 @@ while True:
             else:
                 print("Invalid option!")
         elif calc=="2":
-            print("Pick 1 for Angles and Radian Measure \nPick2 for the Unit Circle \nPick 3 for Right Triangle Trigonometry \nPick 4 for Trigonometric Functions"
+            print("\nPick 1 for Angles and Radian Measure \nPick2 for the Unit Circle \nPick 3 for Right Triangle Trigonometry \nPick 4 for Trigonometric Functions"
                   "of Any angle")
             print()
             trig=input("Select 1,2,3 or 4: ")
@@ -448,7 +448,7 @@ while True:
                       "\n  - A=All are positive on 1st quadrant \n  - S=Only Sin(x) is positive on the 2nd quadrant \n  - T=Only Tan(x) is positive on the 3rd"
                       "quadrant \n  - C=Only Cos(x) is positive on the 4th quadrant")
                 reference_angles=['2nd quadrant: 180-Θ or π-Θ','3rd quadrant: 180+Θ or π+Θ','4th quadrant:360-Θ or 2π-Θ']
-                quadrant=input("Choose 1 for 2nd quadrant \nChoose 2 for 3rd quadrant \nChoose 3 for 4th quadrant \nChoose 4 for all quadrants \n")
+                quadrant=input("\nChoose 1 for 2nd quadrant \nChoose 2 for 3rd quadrant \nChoose 3 for 4th quadrant \nChoose 4 for all quadrants \n")
                 if quadrant=="1":
                     print(reference_angles[0])
                 elif quadrant=="2":
@@ -459,10 +459,10 @@ while True:
                     print(reference_angles)
                 else:
                     print("Invalid option!")
-                answer=input("Do you need another reference angle? (yes or no) ")
+                answer=input("\nDo you need another reference angle? (yes or no) ")
                 while answer=="yes":
                     if answer=="yes":
-                        quadrant=input("Choose 1 for 2nd quadrant \nChoose 2 for 3rd quadrant \nChoose 3 for 4th quadrant \nChoose 4 for all quadrants \n")
+                        quadrant=input("\nChoose 1 for 2nd quadrant \nChoose 2 for 3rd quadrant \nChoose 3 for 4th quadrant \nChoose 4 for all quadrants \n")
                         if quadrant=="1":
                             print(reference_angles[0])
                         elif quadrant=="2":
@@ -475,7 +475,7 @@ while True:
                             print("Invalid option!")
                     else:
                         print("Ok, moving on to graphing!")
-                    answer=input("Do you need another reference angle? (yes or no): ")
+                    answer=input("\nDo you need another reference angle? (yes or no): ")
                 print("\nGraphs of y=Asin(Bx-C) and y=Acos(Bx-C): \n - Amplitude=|A|-1/2 (This is the height of the graph) \n - Period=2π/B (How long before the"
                       " pattern repeats \n - Phase Shift=C/B (The location where the first period starts")
                 print("\nInverse Trigonometric Functions: ")
@@ -488,7 +488,7 @@ while True:
                 sin_functions=inverse_sin_func+"\n"+reciprocal_sin_func
                 cos_functions=inverse_cos_func+"\n"+reciprocal_cos_func
                 tan_functions=inverse_tan_func+"\n"+reciprocal_tan_func
-                trig=input("Choose 1 for Inverse of Sin Functions \nChoose 2 for Inverse of Cos functions \nChoose 3 for Inverse of Tan functions \n")
+                trig=input("\nChoose 1 for Inverse of Sin Functions \nChoose 2 for Inverse of Cos functions \nChoose 3 for Inverse of Tan functions \n")
                 if trig=="1":
                     print(sin_functions)
                 elif trig=="2":
@@ -500,7 +500,7 @@ while True:
                 answer=input("\nDo you need another Inverse Trigonometric Functions? (yes or no) ")
                 while answer=="yes":
                     if answer=="yes":
-                        trig=input("Choose 1 for Inverse of Sin Functions \nChoose 2 for Inverse of Cos functions \nChoose 3 for Inverse of Tan functions \n")
+                        trig=input("\nChoose 1 for Inverse of Sin Functions \nChoose 2 for Inverse of Cos functions \nChoose 3 for Inverse of Tan functions \n")
                         if trig=="1":
                             print(sin_functions)
                         elif trig=="2":
@@ -513,7 +513,7 @@ while True:
                         print("We have reached the end of this chapter, make a new selection!")
                     answer=input("\nDo you need another Inverse Trigonometric Functions? (yes or no) ")
         elif calc=="3":
-            print("Pick 1 for Sum and Difference Formulas \nPick2 for Double Angle, Power-Reducing, and Half Angle formulas \nPick 3 for Product to Sum and Sum to"
+            print("\nPick 1 for Sum and Difference Formulas \nPick2 for Double Angle, Power-Reducing, and Half Angle formulas \nPick 3 for Product to Sum and Sum to"
                   " Product formulas \nPick 4 for Trigonometric equations \nPick 5 for the Law of Sines formulas \nPick 6 for the Law of Cosines formulas \nPick 7"
                   " for Polar and Rectangular coordinates formulas \nPick 8 for Complex numbers formulas\n")
             formulas=input("Select 1,2,3,4,5,6,7 or 8: ")
@@ -524,7 +524,7 @@ while True:
                 angles=['- Sin2Θ=2sinΘcosΘ\n- Cos2Θ=cos^2 Θ-sin^2 Θ\n- Tan2Θ=2tanΘ/1-tan^2 Θ','- Sin^2 Θ=1-cos2Θ/2\n- cos^2 Θ=1+cos2Θ/2\n'
                         '- tan^2 Θ=1-cos2Θ/1+cos2Θ','- sinα/2='+plus_minus_symbol+'√1-cosα/2\n- cosα/2='+plus_minus_symbol+'√1+cosα/2\n- '
                         'tanα/2='+plus_minus_symbol+'√1-cosα/1+cosα']
-                angle=input("Select 1 for Double Angles \nSelect 2 for Power reducing formulas \nSelect 3 for Half Angles \nSelect 4 for all of the above \n")
+                angle=input("\nSelect 1 for Double Angles \nSelect 2 for Power reducing formulas \nSelect 3 for Half Angles \nSelect 4 for all of the above \n")
                 if angle=="1":
                     print(angles[0])
                 elif angle=="2":
@@ -538,7 +538,7 @@ while True:
                 answer=input("\nDo you need another type of formulas for angles? (yes or no) ")
                 while answer=="yes":
                     if answer=="yes":
-                        angle=input("Select 1 for Double Angles \nSelect 2 for Power reducing formulas \nSelect 3 for Half Angles \nSelect 4 for all"
+                        angle=input("\nSelect 1 for Double Angles \nSelect 2 for Power reducing formulas \nSelect 3 for Half Angles \nSelect 4 for all"
                                           "of the above \n")
                         if angle=="1":
                             print(angles[0])
@@ -557,7 +557,7 @@ while True:
                 product_to_sum=('sinα•sinß=½[cos(α-ß)-cos(α+ß]) \n','cosαcosß=½[cos(α-ß)+cos(α+ß] \n','sinαCosß=½[sin(α+ß)+sin(α-ß) \n','sinαCosß=½[sin(α+ß)-sin(α-ß)')
                 sum_to_product=('sinα+ß=2sinα+ß/2•cosα-ß/2 \n','sinα-sinß=2sinα-ß/2•cosα+ß/2 \n','cosα+cosß=2cosα+ß/2•cosα-ß/2 \n','cosα-cosß=-2sinα+ß/2•cosα-ß/2')
                 both=product_to_sum+sum_to_product
-                choice=input("Select 1 for Product to Sum \nSelect 2 for Sum to Product \nSelect 3 for Both \n")
+                choice=input("\nSelect 1 for Product to Sum \nSelect 2 for Sum to Product \nSelect 3 for Both \n")
                 if choice=="1":
                     print(product_to_sum)
                 elif choice=="2":
@@ -569,7 +569,7 @@ while True:
                 answer=input("\nDo you need another type of formulas for angles? (yes or no) ")
                 while answer=="yes":
                     if answer=="yes":
-                        choice=input("Select 1 for Product to Sum \nSelect 2 for Sum to Product \nSelect 3 for Both \n")
+                        choice=input("\nSelect 1 for Product to Sum \nSelect 2 for Sum to Product \nSelect 3 for Both \n")
                         if choice=="1":
                             print(product_to_sum)
                         elif choice=="2":
@@ -589,7 +589,7 @@ while True:
                 print("\nThe Law of Cosines: \n - a^2=b^2+c^2-2bcCosA \n - b^2=a^2+c^2-2acCosB \n - c^2=a^2+b^2-2abCosC"
                       "\nHeron's Formula for the area of a triangle: \n - Area=√s(s-a)(s-b)(s-c) \n  - s=½(a+b+c)")
             elif formulas=="7":
-                print("Pick 1 for Polar to Rectangular \nPick 2 for Rectangular to Polar \nPick 3 for both \n")
+                print("\nPick 1 for Polar to Rectangular \nPick 2 for Rectangular to Polar \nPick 3 for both \n")
                 coordinates=input("Select 1,2, or 3: ")
                 if coordinates=="1":
                     print("\nPolar Coordinates to Rectangular Coordinates: \n - (r,Θ) -> (x,y) \n  - x=rCosΘ \n  - y=rSinΘ")
@@ -603,7 +603,7 @@ while True:
                 answer=input("\nDo you need another type of formulas for angles? (yes or no) ")
                 while answer=="yes":
                     if answer=="yes":
-                        print("Pick 1 for Polar to Rectangular \nPick 2 for Rectangular to Polar \nPick 3 for both \n")
+                        print("\nPick 1 for Polar to Rectangular \nPick 2 for Rectangular to Polar \nPick 3 for both \n")
                         coordinates=input("Select 1,2, or 3: ")
                         if coordinates=="1":
                             print("\nPolar Coordinates to Rectangular Coordinates: \n - (r,Θ) -> (x,y) \n  - x=rCosΘ \n  - y=rSinΘ")
